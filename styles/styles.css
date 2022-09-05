@@ -59,7 +59,6 @@ img {
   border: 1px solid red;
 }
 
-
 /* Header */
 
 header {
@@ -187,13 +186,18 @@ text-shadow: 1px 1px 2px #060D10;
   padding: 0 15px;
 }
 
-div.lead .btn {
+ .btn {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   border: 3px solid #060D10;
   border-radius: 4px;
   background-color: rgba(196, 196, 196, 0);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+justify-content: center;
 }
 
 
@@ -216,4 +220,29 @@ div.lead .btn {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+}
+
+.footer-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item{
+  margin-left: 15px;
+}
+
+.social-link{
+  display: block;
+  width: 220px;
+  height: 35px;
+  background-size: contain;
+  background-position: center center;
 }
