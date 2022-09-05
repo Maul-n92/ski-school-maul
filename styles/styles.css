@@ -4,8 +4,10 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('../fonts/oswald-v49-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/oswald-v49-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/oswald-v49-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/oswald-v49-latin_cyrillic-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-500 - latin_cyrillic */
@@ -14,41 +16,44 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
 /* common */
 
-*{
-   box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
 img {
   display: block;
   max-width: 100%;
 }
 
-
-/* body */
 .body {
- font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #060D10;
   margin: 0;
 }
-.container
-{
+
+.container {
   width: 1278px;
   margin: 0 auto;
   border: 1px solid red;
@@ -56,13 +61,14 @@ img {
 
 
 
-h1,
+/* header */
 
-h2,
+.header
+{
+  background: #66D1FF;
+}
 
-strong,
-
-.lead-text {
+.menu {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -83,13 +89,27 @@ ul {
 
 
 
-
-/* header */
-
 /* product */
-
+.product{
+  background-image: url(../images/promo.png);
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #060D10;
+}
 /* promo*/
+.promo{
+  font-family: 'Oswald', sans-serif;
+  color: #060D10;
+  background-color: #66D1FF;
+  opacity: .1;
+}
 
 /* lead */
 
 /* footer */
+.footer {
+  background: #060D10;
+}
