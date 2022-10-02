@@ -41,6 +41,13 @@
   box-sizing: border-box;
 }
 
+p,
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -54,6 +61,14 @@ body {
   border: 1px solid red;
 }
 
+h1,
+h2,
+strong,
+.lead-text {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
 img {
   display: block;
@@ -96,7 +111,6 @@ header {
   border-radius: 4px;
   padding: 6px 34px;
   min-width: 276px;
-  margin-left: 81px;
 }
 
 .phone {
@@ -106,8 +120,6 @@ header {
   line-height: 34px;
   text-decoration: none;
   color: #060D10;
-  margin-right: 81px;
-  padding: 39px;
 }
 
 .logo-picture{
@@ -140,10 +152,8 @@ header {
 font-family: 'Oswald', sans-serif;
 font-size: 60px;
 line-height: 89px;
+margin-bottom: 60px;
 display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
 text-shadow: 1px 1px 2px #060D10;
 }
 
@@ -160,7 +170,7 @@ text-shadow: 1px 1px 2px #060D10;
 
 .lern {
   background-color: rgba(102, 209, 255, .1);
-  padding: 170px 233px;
+  padding: 170px 0 0 0;
 }
 
 .lern-wrap {
@@ -175,9 +185,7 @@ text-shadow: 1px 1px 2px #060D10;
   color: #060D10;
   font-size: 48px;
   line-height: 167%;
-  margin: 178px;
- text-align: center;
-text-transform: uppercase;
+  margin-bottom: 100px;
 }
 
 .lern-list {
@@ -190,6 +198,7 @@ text-transform: uppercase;
 .lern-item {
   width: 33.33%;
   padding: 0 15px;
+  margin-bottom: 70px;
 
 }
 
@@ -213,8 +222,7 @@ text-transform: uppercase;
 
 .lead {
   background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
-  mix-blend-mode: normal;
-  padding: 170px 0 180px 0;
+    padding: 170px 0 180px 0;
 }
 
 .lead-text {
@@ -287,8 +295,14 @@ text-transform: uppercase;
   list-style: none;
 }
 
+.social-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .social-item{
-  margin-left: 15px;
+  margin-right: 20px;
 }
 
 .social-link{
